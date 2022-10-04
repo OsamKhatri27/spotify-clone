@@ -1,0 +1,144 @@
+.outerWrapper{
+    overflow-y: hidden;
+    /* background-color: gray; */
+    min-height: 100vh;
+    width: 100%;
+}
+.cardWrapper{
+    /* border: 2px solid red; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom:30px;
+    width: 95%;
+}
+.innerCardWrapper{
+    /* margin-top: 5px; */
+    margin-bottom: 10px;
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* .card{
+    margin-top: 10px;
+    width:15%;
+    height: auto;
+    margin-left: 20px;
+
+}
+.card img{
+    width: 100%;
+}
+
+.playlistCard{
+    margin-top: 10px;
+    width:15%;
+    margin-left: 20px;
+    background-color: yellow;
+} */
+.innerWrapper{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+.playlistImage{
+    width: 80%;
+    border: 2px solid black;
+}
+.p{
+    width: 98%;
+    margin: auto;
+    text-align: justify;
+    color: red;
+}
+
+/* .................. */
+
+.card {
+    width: 15%;
+    background: #282828;
+    border-radius: 20px;
+    overflow:   hidden;
+    padding: 1.2rem;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+.card a{
+    text-decoration: none;
+    color: inherit;
+}
+.card:hover .playIcon1 {
+    opacity: 1;
+}
+.card:hover  img{
+    opacity: 50%;
+}
+.card .cardImage {
+    height: 160px;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.card .cardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+    transition: .5s ease;
+    
+}
+
+.card .cardContent {
+    padding: 0.4rem 0;
+}
+.card .cardContent h3 {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    letter-spacing: 0.6px;
+}
+.card .cardContent span {
+    font-size: 0.8rem;
+    color: #b3b3b3;
+}
+
+.playIcon1 {
+    width: 20px;
+    height: 30px;
+    /* border-radius: 50%; */
+    overflow: hidden;
+    display: flex;
+    /* background: #1db954; */
+    margin-left: auto;
+    opacity: 0;
+    position: absolute;
+    right: 1.2rem;
+    bottom: 1.2rem;
+}
+.playIcon1 svg {
+    margin: auto;
+    color:#1db954;
+}
+.cardsWrap {
+    padding-bottom: 0.8rem;
+}
+.cardsWrap h2 {
+    margin-bottom: 0;
+    margin-left: 20px;
+    color: white;
+    font-size: 30px;
+}
+.cardsWrap .subText {
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+    margin-left: 20px;
+    color: white;
+}
+@media  screen and (min-width:4260x) and (max-width:1024px) {
+    .card{
+      width: 30%;
+    }
+    
+  }
